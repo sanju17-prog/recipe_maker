@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class = "container mt-5">
+    <form class="col-6 mx-auto card p-3 shadow-lg" method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      {% if messages and form_submitted %}
+      {{message.tags}}
+        <div class="alert alert-primary" role="alert">
+            {% for message in messages %}
+                {{message}}
+            {% endfor %}
+        </div>
+      {% endif %}
+      <h2 class="text-center">Login</h2>
+      <hr>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Username</label>
+        <input type="text" required name="username" class="form-control">
+        {% comment %} <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> {% endcomment %}
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" required name="password" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <p> Don't have account <a href='/recipes/register/'> Register </a> </p>
+    </form>
+</div>
+
+{% endblock %}

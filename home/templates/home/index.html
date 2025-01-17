@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block start %}
+<h1>yoo, here are some peoples</h1>
+<p>
+    <table border=1>
+    <tr>
+        <td>name</td>
+        <td>age</td>
+    </tr>
+
+    {% for people in peoples %}
+    <tr>
+        <td>{{people.name}}</td>
+        <td>{{people.age}}</td>
+    </tr>
+    {% endfor %}
+    </table>
+</p>
+{% endblock %}
