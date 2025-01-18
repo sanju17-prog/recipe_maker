@@ -130,10 +130,9 @@ USE_I18N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.1/howto/static-files/
+SESSION_COOKIE_AGE = 60  # 1 hour (this is the time before the session expires)
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
-STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

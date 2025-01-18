@@ -7,6 +7,7 @@ class Recipe(models.Model):
     recipe_name = models.CharField(max_length = 200)
     recipe_description = models.TextField(blank=True)
     recipe_image = models.ImageField(upload_to='recipe/', blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def __name__(self):
         return self.receipe_name
