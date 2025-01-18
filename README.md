@@ -28,32 +28,32 @@ Create and activate a virtual environment to isolate project dependencies:
 ```source env/bin/activate```
 
 - For Windows:
-python -m venv env
-env\Scripts\activate
+```python -m venv env```
+```env\Scripts\activate```
 
 3. Install Dependencies
 Install the required packages using pip:
 
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 4. Configure the Database
 Apply the migrations to set up the database: 
 
-python manage.py migrate
+```python manage.py migrate```
 
 5. Run the Development Server
 Start the Django development server:
 
-python manage.py runserver
+```python manage.py runserver```
 
 6. Access the Application
 Open your browser and navigate to:
 
-http://127.0.0.1:8000/
+```http://127.0.0.1:8000/```
 
 7. Load Static Files
 
-python manage.py collectstatic
+```python manage.py collectstatic```
 
 
 
