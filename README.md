@@ -18,14 +18,14 @@ Here's how to set up and run the project:
 1. Clone the Repository
 Start by cloning the project repository from GitHub (or your chosen platform):
 
-git clone https://github.com/sanju17-prog/recipe_maker.git 
+```git clone https://github.com/sanju17-prog/recipe_maker.git ```
 
 2. Set Up a Virtual Environment
 Create and activate a virtual environment to isolate project dependencies:
 
 - For Linux/Mac:
-python3 -m venv env
-source env/bin/activate
+```python3 -m venv env```
+```source env/bin/activate```
 
 - For Windows:
 python -m venv env
