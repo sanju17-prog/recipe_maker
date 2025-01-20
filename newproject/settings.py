@@ -130,7 +130,7 @@ USE_I18N = True
 USE_TZ = True
 
 
-SESSION_COOKIE_AGE = 60  # 1 hour (this is the time before the session expires)
+SESSION_COOKIE_AGE = 3600  # 1 hour (this is the time before the session expires)
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 
