@@ -32,17 +32,17 @@ def create_recipe(request):
     return redirect(RECIPES_URL)
 
 @login_required(login_url=LOGIN_URL)
-def delete_recipe(request, id):
+def delete_recipe(request, slug):
     if request.method == 'GET':
         print("reached here")
-        queryset = get_object_or_404(Recipe, id=id)
+        queryset = get_object_or_404(Recipe, slug = slug)
         queryset.delete()
         return redirect(RECIPES_URL)
     return HttpResponseBadRequest("Invalid Request method")
 
 @login_required(login_url=LOGIN_URL)
-def update_recipe(request, id):
-    queryset = get_object_or_404(Recipe, id=id)
+def update_recipe(request, slug):
+    queryset = get_object_or_404(Recipe, slug = slug)
     if request.method == 'POST':
         return update_recipe_from_post(request, queryset)
     context = {'recipe': queryset}

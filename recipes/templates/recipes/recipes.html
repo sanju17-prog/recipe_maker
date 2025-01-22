@@ -56,8 +56,8 @@
             <img src = "/media/{{ recipe.recipe_image }}" alt="{{ recipe.recipe_name }}" height="100" width="100">
           </td>
           <td>
-            <a href="/recipes/update-recipe/{{recipe.id}}" class="btn btn-primary mt-3">Update</a>
-            <a href="/recipes/delete-recipe/{{recipe.id}}/" class="btn btn-danger mt-1">Delete</a>
+            <a href="/recipes/update-recipe/{{recipe.slug}}" class="btn btn-primary mt-3">Update</a>
+            <a href="/recipes/delete-recipe/{{recipe.slug}}/" class="btn btn-danger mt-1">Delete</a>
           </td>
         </tr>
         {% endfor %}
