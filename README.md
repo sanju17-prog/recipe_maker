@@ -77,9 +77,6 @@ Open your browser and navigate to:
 
 ```bash
 python manage.py collectstatic
-```
-
-```bash
 
 Now, the **slug details** section is added, explaining how slugs are generated and used in the application. This should provide the necessary details for users interacting with your project!
 ```
